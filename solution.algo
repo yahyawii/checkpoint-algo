@@ -1,0 +1,25 @@
+ALGORITHM algorithm_SENTENCE
+VAR
+    i:integer:=0;
+    w:integer:=1;
+    v:integer:=0;
+    c:CHAR
+BEGIN
+    REPEAT
+        write("entrer c");
+        read(c);
+            i=i+1
+        
+        IF (c=" ") THEN
+            w=w+1
+        END_IF
+        IF (c="a" OR c="e" OR c="i" OR c="o" OR c= OR c="y") THEN
+            v=v++
+        END_IF
+    
+
+  until(c=".")
+  write ("number of caracters is",i );
+  write("number of words is",w);
+  write("number of vowels is" ,v)
+END
